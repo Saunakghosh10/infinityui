@@ -25,3 +25,16 @@ body {
     text-wrap: balance;
   }
 }
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+}
+
+.range-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+}

@@ -1,0 +1,103 @@
+/* Base theme variables */
+:root {
+  /* Default theme colors */
+  --primary: 99 102 241;
+  --primary-foreground: 255 255 255;
+  --secondary: 161 161 170;
+  --secondary-foreground: 255 255 255;
+  --muted: 39 39 42;
+  --muted-foreground: 161 161 170;
+  --accent: 113 113 122;
+  --accent-foreground: 255 255 255;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --success: 34 197 94;
+  --success-foreground: 255 255 255;
+  --warning: 234 179 8;
+  --warning-foreground: 255 255 255;
+  --info: 6 182 212;
+  --info-foreground: 255 255 255;
+
+  /* Light theme */
+  --background: 255 255 255;
+  --background-secondary: 250 250 250;
+  --foreground: 10 10 10;
+  --foreground-secondary: 82 82 82;
+  --border: 229 229 229;
+  --border-secondary: 243 243 243;
+  --ring: 99 102 241;
+
+  /* Gradients */
+  --gradient-1: linear-gradient(to right, rgb(var(--primary)), rgb(var(--accent)));
+  --gradient-2: linear-gradient(to right, rgb(var(--info)), rgb(var(--success)));
+  --gradient-3: linear-gradient(to right, rgb(var(--warning)), rgb(var(--destructive)));
+}
+
+/* Dark theme */
+.dark {
+  --background: 9 9 11;
+  --background-secondary: 24 24 27;
+  --foreground: 250 250 250;
+  --foreground-secondary: 161 161 170;
+  --border: 39 39 42;
+  --border-secondary: 63 63 70;
+  --ring: 139 92 246;
+}
+
+/* Custom color schemes */
+.theme-blue {
+  --primary: 59 130 246;
+  --accent: 99 102 241;
+}
+
+.theme-green {
+  --primary: 34 197 94;
+  --accent: 16 185 129;
+}
+
+.theme-purple {
+  --primary: 139 92 246;
+  --accent: 168 85 247;
+}
+
+.theme-rose {
+  --primary: 244 63 94;
+  --accent: 251 113 133;
+}
+
+/* Theme transition */
+* {
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Disable transitions during theme switch */
+.theme-switching * {
+  transition: none !important;
+}
+
+/* Theme switch animation */
+.theme-switch-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.theme-switch-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.theme-switch-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.theme-switch-exit-active {
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+} 

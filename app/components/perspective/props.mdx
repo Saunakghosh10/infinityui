@@ -1,0 +1,33 @@
+## Props
+
+The `PerspectiveGrid` component accepts the following props:
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `children` | `React.ReactNode` | - | Optional content to render inside grid items |
+| `className` | `string` | - | Additional CSS classes |
+| `intensity` | `'subtle' \| 'medium' \| 'strong'` | `'medium'` | Controls the intensity of the 3D effect |
+| `itemCount` | `number` | `16` | Number of grid items |
+| `gap` | `number` | `20` | Gap between grid items |
+| `hover` | `boolean` | `true` | Enable/disable hover effects |
+
+### Intensity Values
+
+Each intensity preset configures multiple properties:
+
+- **subtle**: Gentle perspective effect
+  - Rotation: 10 degrees
+  - Z-depth: 30px
+  - Gap: 15px
+
+- **medium**: Balanced perspective effect
+  - Rotation: 20 degrees
+  - Z-depth: 50px
+  - Gap: 20px
+
+- **strong**: Dramatic perspective effect
+  - Rotation: 30 degrees
+  - Z-depth: 70px
+  - Gap: 25px
+
+### Examples 
